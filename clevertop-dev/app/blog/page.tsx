@@ -4,8 +4,18 @@ export default async function Page() {
   const supabase = createClient()
   const { data: posts } = await supabase.from('blog').select()
 
-  var all_posts = JSON.stringify(posts, null, 2)
+  var post
+  return posts?.map((post) => {
+    return ( 
+      <pre>
+        <h1>{post.title}</h1>
+        <p>{post.content}</p>
+        <p>{post.created_at}</p>
+      </pre>
+      
+    );
+  });
   
   //return <pre>{JSON.stringify(posts, null, 2)}</pre>
-  return <pre>{JSON.stringify(posts, null, 2)}</pre>
+  return <pre>{posts}</pre>
 }
