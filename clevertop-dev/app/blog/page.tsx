@@ -19,5 +19,5 @@ export default async function Page() {
   });
   
   //return <pre>{JSON.stringify(posts, null, 2)}</pre>
-  return <pre>{posts}</pre>
+  //return <pre>{posts}</pre>
 }
