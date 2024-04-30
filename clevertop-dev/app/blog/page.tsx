@@ -1,22 +1,19 @@
-import { createClient } from '@/utils/supabase/server'
+import BlogPosts from '@/components/BlogPosts'
+import Navbar from '@/components/Navbar'
+
 
 export default async function Page() {
-  const supabase = createClient()
-  const { data: posts } = await supabase.from('blog').select()
-
+  
   var post
-  return posts?.map((post) => {
-    return ( 
-      <pre>
-        <h1>{post.title}</h1>
-        <p>{post.content}</p>
-        <p>{post.created_at}</p>
-        <p>meow</p>
-        <br></br>
-      </pre>
-      
-    );
-  });
+  return (
+    <div>
+      <div className="flex-1 w-full flex flex-col gap-20 items-center" >
+        <Navbar />
+      </div>
+      <BlogPosts />
+    </div>
+  )
+  
   
   //return <pre>{JSON.stringify(posts, null, 2)}</pre>
   //return <pre>{posts}</pre>

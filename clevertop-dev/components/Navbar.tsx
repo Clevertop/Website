@@ -23,9 +23,7 @@ export default function Navbar() {
                 {/* <DeployButton />
                 {isSupabaseConnected && <AuthButton />} */}
                 <Link href="/">Home</Link>
-                <p>Hello!</p>
-                <p>Meow!</p>
-                <p>Nyaaaa!</p>
+                <Link href="/blog">Blog</Link>
             </div>
         </nav>
     )
