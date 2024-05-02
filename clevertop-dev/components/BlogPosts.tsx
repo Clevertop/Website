@@ -11,7 +11,7 @@ export default async function BlogPosts() {
         <Link 
         className='blogPost'
         key={post.id}
-        href={`/blog2?post=${post.id}`}
+        href={`/blog/${post.id}`}
         >
             <h2>{post.title}</h2>
             <p>{post.description}</p>
