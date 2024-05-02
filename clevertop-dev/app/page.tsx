@@ -2,6 +2,7 @@ import { createClient } from "@/utils/supabase/server";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 import Test from "@/app/blog/posts/index.mdx"
+//import { CustomMDX } from 'app/components/mdx'
 
 export default async function Index() {
   const canInitSupabaseClient = () => {
@@ -29,7 +30,8 @@ export default async function Index() {
         </main>
       
       </div>
-        <Test />
+        {/* <Test /> */}
+        {/* <CustomMDX /> */}
       <div>
 
 
