@@ -17,3 +17,4 @@ Resources:
 - https://www.skies.dev/nextjs-supabase-blog
 - https://github.com/vercel/examples/tree/main/solutions/blog
 - https://nextjs.org/docs/pages/building-your-application/configuring/mdx#remote-mdx
+
