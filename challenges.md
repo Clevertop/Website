@@ -6,6 +6,14 @@ Goals for the website:
 - [ ] about me page
     - [ ] links to itch, github, mastrodon, ect...
 - [ ] make it awesthetic
+- [ ] make blog posts
+    - [ ] a begginers trials and tribulations in linux
+- [ ] make project posts
+    - [ ] TOTSD
+    - [ ] This website 
+    - [ ] Arcane Raiders 
 
 Resources:
 - https://www.skies.dev/nextjs-supabase-blog
+- https://github.com/vercel/examples/tree/main/solutions/blog
+- https://nextjs.org/docs/pages/building-your-application/configuring/mdx#remote-mdx
