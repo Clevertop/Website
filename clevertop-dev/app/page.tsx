@@ -1,6 +1,7 @@
 import { createClient } from "@/utils/supabase/server";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
+import Test from "@/app/blog/posts/index.mdx"
 
 export default async function Index() {
   const canInitSupabaseClient = () => {
@@ -26,6 +27,12 @@ export default async function Index() {
           <h2 className="font-bold text-4xl mb-4">Clevertop's Site</h2>
           <p>Welcome to my really cool website, please check out my blog and projects page</p>
         </main>
+      
+      </div>
+        <Test />
+      <div>
+
+
       </div>
 
       <footer className="w-full border-t border-t-foreground/10 p-8 flex justify-center text-center text-xs">

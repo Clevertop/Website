@@ -8,6 +8,11 @@ const nextConfig = {
 }
  
 const withMDX = createMDX({
+  extension : /\.mdx?$/,
+  experimental: {
+    appDir:true,
+    mdxRs:true
+  }
   // Add markdown plugins here, as desired
 })
  
