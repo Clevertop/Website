@@ -1,7 +1,9 @@
 Goals for the website:
-- [ ] Clean up filesystem
-- [ ] Load blog posts from MDX
-- [ ] Load blog posts from *Remote* MDX
+- [x] Clean up filesystem
+- [x] Load blog posts from MDX
+- [x] Load blog posts from *Remote* MDX
+- [ ] Load correct post from listing
+- [ ] Make formatting work (probably just css)
 - [ ] use similar system for project pages 
 - [ ] about me page
     - [ ] links to itch, github, mastrodon, ect...

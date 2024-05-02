@@ -1,4 +1,5 @@
 import { createClient } from '@/utils/supabase/server'
+import Link from 'next/link'
 
 export default async function BlogPosts() {
     const supabase = createClient()
@@ -7,13 +8,18 @@ export default async function BlogPosts() {
 
     return posts?.map((post) => {
         return ( 
-        <pre>
+        <Link 
+        className='blogPost'
+        key={post.id}
+        href={`/blog2?post=${post.id}`}
+        >
             <h2>{post.title}</h2>
-            <p>{post.content}</p>
+            <p>{post.description}</p>
+            {/* <p>{post.content}</p> */}
             <p>{post.created_at}</p>
             <p>meow</p>
             <br></br>
-        </pre>
+        </Link>
         
         );
     });
