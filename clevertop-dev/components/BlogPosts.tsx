@@ -8,7 +8,7 @@ export default async function BlogPosts() {
     return posts?.map((post) => {
         return ( 
         <pre>
-            <h1>{post.title}</h1>
+            <h2>{post.title}</h2>
             <p>{post.content}</p>
             <p>{post.created_at}</p>
             <p>meow</p>
