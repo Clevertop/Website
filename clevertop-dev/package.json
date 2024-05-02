@@ -6,11 +6,15 @@
     "start": "next start"
   },
   "dependencies": {
+    "@mdx-js/loader": "^3.0.1",
+    "@mdx-js/react": "^2.3.0",
     "@supabase/ssr": "latest",
     "@supabase/supabase-js": "latest",
+    "@types/mdx": "^2.0.13",
     "autoprefixer": "10.4.17",
     "geist": "^1.2.1",
     "next": "latest",
+    "next-mdx-remote": "^4.4.1",
     "postcss": "8.4.33",
     "react": "18.2.0",
     "react-dom": "18.2.0",
