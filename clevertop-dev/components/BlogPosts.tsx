@@ -8,19 +8,20 @@ export default async function BlogPosts() {
 
     return posts?.map((post) => {
         return ( 
-        <Link 
-        className='blogPost'
-        key={post.id}
-        href={`/blog/${post.id}`}
-        >
-            <h2>{post.title}</h2>
-            <p>{post.description}</p>
-            {/* <p>{post.content}</p> */}
-            <p>{post.created_at}</p>
-            <p>meow</p>
-            <br></br>
-        </Link>
-        
+        <div className='card'>
+            <Link
+            className='blogPost'
+            key={post.id}
+            href={`/blog/${post.id}`}
+            >
+                <h2>{post.title}</h2>
+                <p>{post.description}</p>
+                {/* <p>{post.content}</p> */}
+                <p>{post.created_at}</p>
+                <p>meow</p>
+                <br></br>
+            </Link>
+        </div>
         );
     });
 };

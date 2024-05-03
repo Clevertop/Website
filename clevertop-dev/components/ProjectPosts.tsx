@@ -8,19 +8,20 @@ export default async function ProjectPosts() {
 
     return posts?.map((post) => {
         return ( 
-        <Link 
-        className='blogPost'
-        key={post.id}
-        href={post.link}
-        >
-            <h2>{post.title}</h2>
-            <p>{post.description}</p>
-            <p>{post.created_at}</p>
-            <img src={post.image}></img>
-            <p>meow</p>
-            <br></br>
-        </Link>
-        
+        <div className='card'>
+            <Link 
+            className='blogPost'
+            key={post.id}
+            href={post.link}
+            >
+                <h2>{post.title}</h2>
+                <p>{post.description}</p>
+                <p>{post.created_at}</p>
+                <img src={post.image}></img>
+                <p>meow</p>
+                <br></br>
+            </Link>
+        </div>
         );
     });
 };

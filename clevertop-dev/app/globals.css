@@ -45,6 +45,21 @@
   margin: 5%;
   margin-left: 5%;
   margin-right: 5%;
+  
+}
+
+.card {
+  background-color: #2b2b2b;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+  transition: 0.3s;
+  
+}
+
+.card:hover {
+  
+  background-color:#40045c
 }
 
 p {
