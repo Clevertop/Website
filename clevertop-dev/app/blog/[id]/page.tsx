@@ -4,6 +4,7 @@ import { createClient } from '@/utils/supabase/server'
 //import React, { useState } from 'react';
 import { useSearchParams } from 'next/navigation'
 
+export const revalidate = 60
 
 type Props = {
     params: {id : string}
