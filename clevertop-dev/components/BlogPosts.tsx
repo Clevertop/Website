@@ -8,7 +8,12 @@ export default async function BlogPosts() {
 
     return posts?.map((post) => {
         return ( 
-        <div className='card'>
+        
+        <div>
+            {post.show == 1 &&
+            <div className='card'>
+            
+            
             <Link
             className='blogPost'
             key={post.id}
@@ -18,10 +23,14 @@ export default async function BlogPosts() {
                 <p>{post.description}</p>
                 {/* <p>{post.content}</p> */}
                 <p>{post.created_at}</p>
-                <p>meow</p>
+                {/* <p>meow</p> */}
                 <br></br>
             </Link>
+            
+            </div>
+            }
         </div>
+        
         );
     });
 };

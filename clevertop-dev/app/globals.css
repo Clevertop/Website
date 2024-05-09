@@ -57,6 +57,10 @@
   
 }
 
+.projectButton {
+  margin-right: 5px;
+}
+
 .card:hover {
   
   background-color:#40045c

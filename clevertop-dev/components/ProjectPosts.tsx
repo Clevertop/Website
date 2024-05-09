@@ -1,5 +1,8 @@
 import { createClient } from '@/utils/supabase/server'
-import Link from 'next/link'
+import { Button } from '@nextui-org/button';
+import {Link} from "@nextui-org/link";
+//import Link from 'next/link'
+//import {Button} from "@nextui-org/react";
 
 export default async function ProjectPosts() {
     const supabase = createClient()
@@ -9,18 +12,41 @@ export default async function ProjectPosts() {
     return posts?.map((post) => {
         return ( 
         <div className='card'>
-            <Link 
+            <div 
             className='blogPost'
             key={post.id}
-            href={post.link}
+            // href={post.link}
             >
-                <h2>{post.title}</h2>
+                <h1>{post.title}</h1>
                 <p>{post.description}</p>
-                <p>{post.created_at}</p>
+                {/* <p>{post.created_at}</p> */}
                 <img src={post.image}></img>
-                <p>meow</p>
+                {/* <p>meow</p>*/}
                 <br></br>
-            </Link>
+                
+                {post.project_link != "" &&
+                <Button className="projectButton"
+                    href={post.project_link}
+                    as={Link}
+                    showAnchorIcon
+                    variant="solid" 
+                >  
+                    Project Page
+                </Button>
+                }
+                
+                {post.github_link != "" && 
+                    <Button className="projectButton"
+                        href={post.github_link}
+                        as={Link}
+                        showAnchorIcon
+                        variant="solid" 
+                        color="secondary"
+                    >  
+                        Repository
+                    </Button>
+                }
+            </div>
         </div>
         );
     });
