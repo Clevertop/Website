@@ -11,16 +11,20 @@ export default async function ProjectPosts() {
 
     return posts?.map((post) => {
         return ( 
-        <div className='card'>
-            <div 
-            className='blogPost'
+            
+        <div className='project-tile-small' >
+            {/* <img src={post.image}></img> */}
+            <div className='card'
+            //className='blogPost'
             key={post.id}
             // href={post.link}
             >
+                <img src={post.image}></img>
+                <div className='card-content'>
                 <h1>{post.title}</h1>
                 <p>{post.description}</p>
                 {/* <p>{post.created_at}</p> */}
-                <img src={post.image}></img>
+                
                 {/* <p>meow</p>*/}
                 <br></br>
                 
@@ -31,7 +35,7 @@ export default async function ProjectPosts() {
                     showAnchorIcon
                     variant="solid" 
                 >  
-                    Project Page
+                    Project
                 </Button>
                 }
                 
@@ -43,9 +47,10 @@ export default async function ProjectPosts() {
                         variant="solid" 
                         color="secondary"
                     >  
-                        Repository
+                        Repo
                     </Button>
                 }
+                </div>
             </div>
         </div>
         );

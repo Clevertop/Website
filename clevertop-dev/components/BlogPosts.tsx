@@ -19,12 +19,14 @@ export default async function BlogPosts() {
             key={post.id}
             href={`/blog/${post.id}`}
             >
-                <h2>{post.title}</h2>
-                <p>{post.description}</p>
-                {/* <p>{post.content}</p> */}
-                <p>{post.created_at}</p>
-                {/* <p>meow</p> */}
-                <br></br>
+                <div className='card-content'>
+                    <h2>{post.title}</h2>
+                    <p>{post.description}</p>
+                    {/* <p>{post.content}</p> */}
+                    <p>{post.created_at}</p>
+                    {/* <p>meow</p> */}
+                    <br></br>
+                </div>
             </Link>
             
             </div>
