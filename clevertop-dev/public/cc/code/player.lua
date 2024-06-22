@@ -8,7 +8,8 @@ local songs = {
     "Walkin on the Sun", "https://github.com/Clevertop/nbssongs/raw/main/walknOnTheSun.dfpwm",
     "Gangnam Style", "https://github.com/Clevertop/nbssongs/raw/main/Gangnam.dfpwm",
     "Never gonna give you up", "https://github.com/Clevertop/nbssongs/raw/main/20091025_Rick%20Astley%20-%20Never%20Gonna%20Give%20You%20Up%20(Official%20Music%20Video).dfpwm",
-    "Writing on the Wall", "https://www.clevertop.dev/cc/music/writingOnTheWall.dfpwm"
+    "Writing on the Wall", "https://www.clevertop.dev/cc/music/writingOnTheWall.dfpwm",
+    "Caramelldansen", "https://www.clevertop.dev/cc/music/caramella.dfpwm"
 }
 
 -- 1,2   3,4
