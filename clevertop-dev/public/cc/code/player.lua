@@ -41,7 +41,7 @@ while true do
     print("")
     print("Selected track: ")
     print(songs[track])
-    print(((track+1)/2).."/"..#songs)
+    print(((track+1)/2).."/"..(#songs/2))
 
 end
     
